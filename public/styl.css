@@ -32,22 +32,17 @@ body::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
 }
 
-
 .container {
     text-align: center;
     width: 100%;
     height: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-}
-
-.video-list {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
-.video-player {
+.video-plot {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -55,10 +50,22 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.video-player {
+    position: relative;
+    width: 400px;
+    height: 850px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .video-player video {
+    z-index: 4;
     width: 100%;
-    height: auto;
-    max-height: 100%;
 }
