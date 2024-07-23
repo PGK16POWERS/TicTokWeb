@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const handleIntersection = (entries, observer) => {
         entries.forEach(entry => {
-            const video = entry.target.querySelector('video');
+            const video = entry.target.querySelector('video.video');
+
             if (entry.isIntersecting) {
                 video.play();
-            } else {
-                video.pause();
             }
         });
     };
