@@ -51,21 +51,51 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    gap: 1rem;
 }
 
 .video-player {
     position: relative;
     width: 400px;
     height: 850px;
-    border: 2px solid transparent;
+    border: 0px solid transparent;
     border-radius: 10px;
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    cursor: pointer;
 }
 
 .video-player video {
+    position: relative;
     z-index: 4;
     width: 100%;
+}
+
+.engage-btn {
+    bottom: 1rem;
+    right: -3rem;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(230, 230, 230);
+    border: 0 solid transparent;
+    border-radius: 100px;
+    z-index: 16;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.engage-btn:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.controls-div {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .5rem;
+    padding-bottom: 1rem;
 }
