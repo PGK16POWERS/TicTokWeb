@@ -1,0 +1,45 @@
+#main-frame {
+    width: 100%;
+    height: 92vh;
+}
+
+.frame-parent {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+aside {
+    width: 100%;
+    max-width: 300px;
+    border: 0 solid transparent;
+    border-right: 1px solid #EBEBEB;
+    height: 100%;
+}
+
+#switch-frame {
+    width: 100%;
+    height: 100%;
+}
+
+/* ASIDE STYLE */
+
+.top, .middle, .bottom {
+    padding: 1rem 2rem;
+}
+
+.top nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.routerlink {
+    font-size: 1.1em;
+    font-family: var(--prompt);
+    color: #161616;
+    font-weight: 500;
+}
+
+/* ASIDE STYLE */
